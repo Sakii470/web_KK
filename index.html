@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kosmetologia – Profesjonalna Pielęgnacja Skóry</title>
+  <meta name="description" content="Profesjonalny gabinet kosmetologiczny oferujący zabiegi pielęgnacyjne twarzy i ciała. Sprawdź nasz cennik i umów się na wizytę." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="logo">Beauty<span>Studio</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">O mnie</a></li>
+        <li><a href="#services">Zabiegi</a></li>
+        <li><a href="#pricing">Cennik</a></li>
+        <li><a href="#gallery">Galeria</a></li>
+        <li><a href="#reviews">Opinie</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+        <li><a href="#contact" class="btn btn-nav">Umów wizytę</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <header class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <p class="hero-tag">Profesjonalna kosmetologia</p>
+      <h1>Twoja skóra<br />zasługuje na&nbsp;najlepsze</h1>
+      <p class="hero-sub">Kompleksowa pielęgnacja twarzy i ciała w&nbsp;kameralnym, nowoczesnym gabinecie.</p>
+      <div class="hero-buttons">
+        <a href="#pricing" class="btn btn-primary">Zobacz cennik</a>
+        <a href="#contact" class="btn btn-outline">Umów wizytę</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="section about" id="about">
+    <div class="container about-grid">
+      <div class="about-image reveal">
+        <img src="img1.jpeg" alt="Kosmetolog w gabinecie" loading="lazy" />
+      </div>
+      <div class="about-text reveal">
+        <p class="section-tag">O mnie</p>
+        <h2>Pasja do piękna<br />i&nbsp;zdrowej skóry</h2>
+        <p>
+          Jestem dyplomowaną kosmetolożką z&nbsp;wieloletnim doświadczeniem w&nbsp;pielęgnacji skóry. 
+          Mój gabinet to miejsce, w&nbsp;którym nowoczesne technologie łączą się z&nbsp;indywidualnym podejściem do każdej klientki.
+        </p>
+        <p>
+          Stawiam na bezpieczne, sprawdzone zabiegi i&nbsp;profesjonalne kosmetyki, aby Twoja skóra wyglądała promiennie i&nbsp;zdrowo.
+        </p>
+        <a href="#services" class="btn btn-primary">Poznaj zabiegi</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section class="section services" id="services">
+    <div class="container">
+      <p class="section-tag center">Zabiegi</p>
+      <h2 class="section-title">Co mogę dla Ciebie zrobić</h2>
+      <div class="services-grid">
+
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2"><circle cx="32" cy="24" r="12"/><path d="M16 56c0-8.8 7.2-16 16-16s16 7.2 16 16"/><path d="M32 12V4M24 14l-4-6M40 14l4-6"/></svg>
+          </div>
+          <h3>Pielęgnacja twarzy</h3>
+          <p>Oczyszczanie, nawilżanie, anti-aging — zabiegi dobrane do potrzeb Twojej skóry.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="32" cy="32" rx="20" ry="28"/><path d="M32 4v56M12 32h40"/><path d="M16 16c8 4 16 4 24 0M16 48c8-4 16-4 24 0"/></svg>
+          </div>
+          <h3>Pielęgnacja ciała</h3>
+          <p>Masaże, peelingi i&nbsp;zabiegi wyszczuplające dla pięknej i&nbsp;jędrnej sylwetki.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 28c-2-8 4-16 12-16s14 8 12 16"/><path d="M16 28h32c0 12-8 24-16 24S16 40 16 28z"/><path d="M28 28v12M36 28v12"/></svg>
+          </div>
+          <h3>Brwi i rzęsy</h3>
+          <p>Laminacja, henna, lifting i&nbsp;przedłużanie — podkreśl swoje piękno.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2"><rect x="12" y="8" width="40" height="48" rx="4"/><path d="M20 20h24M20 28h24M20 36h16"/><circle cx="44" cy="44" r="8"/><path d="M44 40v8M40 44h8"/></svg>
+          </div>
+          <h3>Konsultacja kosmetologiczna</h3>
+          <p>Bezpłatna analiza skóry i&nbsp;indywidualny plan pielęgnacji domowej.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRICING ========== -->
+  <section class="section pricing" id="pricing">
+    <div class="container">
+      <p class="section-tag center">Cennik</p>
+      <h2 class="section-title">Przejrzysty cennik zabiegów</h2>
+
+      <div class="pricing-tabs">
+        <button class="tab-btn active" data-tab="face">Twarz</button>
+        <button class="tab-btn" data-tab="body">Ciało</button>
+        <button class="tab-btn" data-tab="brows">Brwi&nbsp;&amp;&nbsp;rzęsy</button>
+      </div>
+
+      <div class="pricing-tables">
+
+        <!-- TWARZ -->
+        <div class="price-table active" id="tab-face">
+          <div class="price-row reveal">
+            <div class="price-info">
+              <h4>Oczyszczanie manualne</h4>
+              <p>Głębokie oczyszczanie z ekstrakcją zaskórników</p>
+            </div>
+            <span class="price">150 zł</span>
+          </div>
+          <div class="price-row reveal">
+            <div class="price-info">
+              <h4>Peeling chemiczny</h4>
+              <p>Kwasy dostosowane do typu skóry</p>
+            </div>
+            <span class="price">200 zł</span>
+          </div>
+          <div class="price-row reveal">
+            <div class="price-info">
+              <h4>Mezoterapia igłowa</h4>
+              <p>Odżywienie i regeneracja głębokich warstw skóry</p>
+            </div>
+            <span class="price">300 zł</span>
+          </div>
+          <div class="price-row reveal">
+            <div class="price-info">
+              <h4>Mikrodermabrazja</h4>
+              <p>Złuszczanie i wygładzanie naskórka</p>
+            </div>
+            <span class="price">180 zł</span>
+          </div>
+          <div class="price-row reveal">
+            <div class="price-info">
+              <h4>Lifting RF</h4>
+              <p>Ujędrnianie skóry falami radiowymi</p>
+            </div>
+            <span class="price">350 zł</span>
+          </div>
+          <div class="price-row reveal">
+            <div class="price-info">
+              <h4>Nawilżanie kwasem hialuronowym</h4>
+              <p>Intensywne nawodnienie i odbudowa bariery skóry</p>
+            </div>
+            <span class="price">220 zł</span>
+          </div>
+        </div>
+
+        <!-- CIAŁO -->
+        <div class="price-table" id="tab-body">
+          <div class="price-row reveal">
+            <div class="price-info">
+              <h4>Drenaż limfatyczny</h4>
+              <p>Redukcja obrzęków i poprawa krążenia</p>
+            </div>
+            <span class="price">200 zł</span>
+          </div>
+          <div class="price-row reveal">
+            <div class="price-info">
+              <h4>Masaż relaksacyjny</h4>
+              <p>60 minut głębokiego odprężenia</p>
+            </div>
+            <span class="price">150 zł</span>
+          </div>
+          <div class="price-row reveal">
+            <div class="price-info">
+              <h4>Peeling ciała</h4>
+              <p>Złuszczenie i nawilżenie skóry całego ciała</p>
+            </div>
+            <span class="price">120 zł</span>
+          </div>
+          <div class="price-row reveal">
+            <div class="price-info">
+              <h4>Zabieg wyszczuplający</h4>
+              <p>Modelowanie sylwetki i redukcja cellulitu</p>
+            </div>
+            <span class="price">250 zł</span>
+          </div>
+          <div class="price-row reveal">
+            <div class="price-info">
+              <h4>Karboksyterapia</h4>
+              <p>Stymulacja produkcji kolagenu CO₂</p>
+            </div>
+            <span class="price">280 zł</span>
+          </div>
+        </div>
+
+        <!-- BRWI & RZĘSY -->
+        <div class="price-table" id="tab-brows">
+          <div class="price-row reveal">
+            <div class="price-info">
+              <h4>Laminacja brwi</h4>
+              <p>Stylizacja i utrwalenie naturalnego kształtu</p>
+            </div>
+            <span class="price">100 zł</span>
+          </div>
+          <div class="price-row reveal">
+            <div class="price-info">
+              <h4>Henna brwi</h4>
+              <p>Koloryzacja i podkreślenie łuku brwiowego</p>
+            </div>
+            <span class="price">50 zł</span>
+          </div>
+          <div class="price-row reveal">
+            <div class="price-info">
+              <h4>Regulacja brwi</h4>
+              <p>Precyzyjne kształtowanie pęsetą</p>
+            </div>
+            <span class="price">30 zł</span>
+          </div>
+          <div class="price-row reveal">
+            <div class="price-info">
+              <h4>Lifting rzęs</h4>
+              <p>Naturalne podkręcenie z efektem open-eyes</p>
+            </div>
+            <span class="price">120 zł</span>
+          </div>
+          <div class="price-row reveal">
+            <div class="price-info">
+              <h4>Przedłużanie rzęs 1:1</h4>
+              <p>Klasyczna metoda — naturalny efekt</p>
+            </div>
+            <span class="price">200 zł</span>
+          </div>
+          <div class="price-row reveal">
+            <div class="price-info">
+              <h4>Przedłużanie rzęs objętościowe</h4>
+              <p>Metoda 2D-5D — efekt wow</p>
+            </div>
+            <span class="price">280 zł</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== GALLERY ========== -->
+  <section class="section gallery" id="gallery">
+    <div class="container">
+      <p class="section-tag center">Galeria</p>
+      <h2 class="section-title">Efekty moich zabiegów</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item reveal"><img src="img1.jpeg" alt="Zabieg kosmetyczny 1" loading="lazy" /></div>
+        <div class="gallery-item reveal"><img src="img2.jpeg" alt="Zabieg kosmetyczny 2" loading="lazy" /></div>
+        <div class="gallery-item reveal"><img src="img3.jpeg" alt="Zabieg kosmetyczny 3" loading="lazy" /></div>
+        <div class="gallery-item reveal"><img src="img1.jpeg" alt="Zabieg kosmetyczny 4" loading="lazy" /></div>
+        <div class="gallery-item reveal"><img src="img2.jpeg" alt="Zabieg kosmetyczny 5" loading="lazy" /></div>
+        <div class="gallery-item reveal"><img src="img3.jpeg" alt="Zabieg kosmetyczny 6" loading="lazy" /></div>
+      </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Zamknij">&times;</button>
+      <button class="lightbox-prev" id="lightboxPrev" aria-label="Poprzednie">&#8249;</button>
+      <img src="" alt="" id="lightboxImg" />
+      <button class="lightbox-next" id="lightboxNext" aria-label="Następne">&#8250;</button>
+    </div>
+  </section>
+
+  <!-- ========== REVIEWS ========== -->
+  <section class="section reviews" id="reviews">
+    <div class="container">
+      <p class="section-tag center">Opinie</p>
+      <h2 class="section-title">Co mówią moje klientki</h2>
+      <div class="reviews-grid">
+
+        <div class="review-card reveal">
+          <div class="review-stars">★★★★★</div>
+          <p>"Fantastyczny gabinet! Skóra po zabiegu wygląda niesamowicie. Polecam każdej kobiecie."</p>
+          <span class="review-author">— Anna K.</span>
+        </div>
+
+        <div class="review-card reveal">
+          <div class="review-stars">★★★★★</div>
+          <p>"Profesjonalne podejście i cudowna atmosfera. Wychodzę zawsze odprężona i zadowolona."</p>
+          <span class="review-author">— Marta W.</span>
+        </div>
+
+        <div class="review-card reveal">
+          <div class="review-stars">★★★★★</div>
+          <p>"Najlepsze przedłużanie rzęs w mieście! Efekt naturalny i trwały. Już nie wyobrażam sobie innego gabinetu."</p>
+          <span class="review-author">— Karolina P.</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="section contact" id="contact">
+    <div class="container contact-grid">
+
+      <div class="contact-info reveal">
+        <p class="section-tag">Kontakt</p>
+        <h2>Umów się na wizytę</h2>
+        <p>Zadzwoń, napisz lub wypełnij formularz — odezwę się najszybciej jak to możliwe.</p>
+
+        <div class="contact-details">
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            <div>
+              <strong>Telefon</strong>
+              <a href="tel:+48123456789">+48 123 456 789</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4l-10 8L2 4"/></svg>
+            <div>
+              <strong>E-mail</strong>
+              <a href="mailto:kontakt@beautystudio.pl">kontakt@beautystudio.pl</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>
+              <strong>Adres</strong>
+              <p>ul. Piękna 12, 00-001 Warszawa</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <div>
+              <strong>Godziny otwarcia</strong>
+              <p>Pon – Pt: 9:00 – 19:00<br/>Sob: 9:00 – 15:00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm">
+        <div class="form-group">
+          <input type="text" id="formName" placeholder="Imię i nazwisko" required />
+        </div>
+        <div class="form-group">
+          <input type="tel" id="formPhone" placeholder="Numer telefonu" required />
+        </div>
+        <div class="form-group">
+          <input type="email" id="formEmail" placeholder="Adres e-mail" />
+        </div>
+        <div class="form-group">
+          <select id="formService">
+            <option value="" disabled selected>Wybierz zabieg</option>
+            <option>Oczyszczanie manualne</option>
+            <option>Peeling chemiczny</option>
+            <option>Mezoterapia igłowa</option>
+            <option>Mikrodermabrazja</option>
+            <option>Lifting RF</option>
+            <option>Masaż relaksacyjny</option>
+            <option>Peeling ciała</option>
+            <option>Laminacja brwi</option>
+            <option>Lifting rzęs</option>
+            <option>Przedłużanie rzęs</option>
+            <option>Inne</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <textarea id="formMessage" placeholder="Wiadomość (opcjonalnie)" rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Wyślij wiadomość</button>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#hero" class="logo">Beauty<span>Studio</span></a>
+      <div class="footer-links">
+        <a href="#about">O mnie</a>
+        <a href="#services">Zabiegi</a>
+        <a href="#pricing">Cennik</a>
+        <a href="#gallery">Galeria</a>
+        <a href="#contact">Kontakt</a>
+      </div>
+      <div class="footer-socials">
+        <a href="#" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="#" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+      </div>
+      <p class="footer-copy">&copy; 2026 BeautyStudio. Wszelkie prawa zastrzeżone.</p>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
