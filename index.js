@@ -1,8 +1,9 @@
 /* ===== NAVBAR SCROLL ===== */
-const navbar = document.getElementById('navbar');
-window.addEventListener('scroll', () => {
-  navbar.classList.toggle('scrolled', window.scrollY > 60);
-});
+// Navbar is always white; keep class unused to avoid any scroll state changes.
+// const navbar = document.getElementById('navbar');
+// window.addEventListener('scroll', () => {
+//   navbar.classList.toggle('scrolled', window.scrollY > 60);
+// });
 
 /* ===== MOBILE MENU ===== */
 const navToggle = document.getElementById('navToggle');
@@ -122,23 +123,84 @@ sections.forEach(s => sectionObserver.observe(s));
 /* ===== CONTACT FORM ===== */
 const contactForm = document.getElementById('contactForm');
 
-contactForm.addEventListener('submit', (e) => {
-  e.preventDefault();
+if (contactForm) {
+  contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
 
-  const name = document.getElementById('formName').value;
-  const btn = contactForm.querySelector('button[type="submit"]');
-  const originalText = btn.textContent;
+    const name = document.getElementById('formName').value;
+    const btn = contactForm.querySelector('button[type="submit"]');
+    const originalText = btn.textContent;
 
-  btn.textContent = `Dziękujemy, ${name}!`;
-  btn.disabled = true;
-  btn.style.background = '#6abf7b';
+    btn.textContent = `Dziękujemy, ${name}!`;
+    btn.disabled = true;
+    btn.style.background = '#6abf7b';
 
-  setTimeout(() => {
-    btn.textContent = originalText;
-    btn.disabled = false;
-    btn.style.background = '';
-    contactForm.reset();
-  }, 3000);
-});
+    setTimeout(() => {
+      btn.textContent = originalText;
+      btn.disabled = false;
+      btn.style.background = '';
+      contactForm.reset();
+    }, 3000);
+  });
+}
 
 /* ===== SMOOTH COUNTER (optional — for future stats) ===== */
+
+/* ===== TREATMENT POPUP ===== */
+const popupOverlay = document.getElementById('popupOverlay');
+const popupContent = document.getElementById('popupContent');
+
+function openPopup(templateId) {
+  const tpl = document.getElementById(templateId);
+  if (!tpl) return;
+  popupContent.innerHTML = '';
+  popupContent.appendChild(tpl.content.cloneNode(true));
+
+  // CTA links inside popup close popup and scroll to contact
+  popupContent.querySelectorAll('.popup-cta').forEach(link => {
+    link.addEventListener('click', () => {
+      closePopup();
+    });
+  });
+
+  popupOverlay.classList.add('active');
+  document.body.style.overflow = 'hidden';
+  // Scroll popup to top
+  const box = popupOverlay.querySelector('.popup-box');
+  if (box) box.scrollTop = 0;
+}
+
+function closePopup() {
+  popupOverlay.classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+// Open popup when clicking a zabieg card or its button
+document.querySelectorAll('.zabieg-card').forEach(card => {
+  card.addEventListener('click', () => {
+    openPopup(card.dataset.popup);
+  });
+  // Prevent double-fire from button — it's inside the card, click bubbles up
+});
+
+// Close on overlay backdrop click
+popupOverlay.addEventListener('click', e => {
+  // 1) Click outside the dialog content
+  if (e.target === popupOverlay) {
+    closePopup();
+    return;
+  }
+
+  // 2) Click on any close button injected from templates
+  const closeBtn = e.target.closest('.popup-close');
+  if (closeBtn) {
+    e.preventDefault();
+    closePopup();
+  }
+});
+
+// Close on Escape key
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && popupOverlay.classList.contains('active')) closePopup();
+});
+

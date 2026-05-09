@@ -1,27 +1,34 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kosmetologia – Profesjonalna Pielęgnacja Skóry</title>
-  <meta name="description" content="Profesjonalny gabinet kosmetologiczny oferujący zabiegi pielęgnacyjne twarzy i ciała. Sprawdź nasz cennik i umów się na wizytę." />
+  <meta name="description"
+    content="Profesjonalny gabinet kosmetologiczny oferujący zabiegi pielęgnacyjne twarzy i ciała. Sprawdź nasz cennik i umów się na wizytę." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="index.css" />
 </head>
+
 <body>
 
   <!-- ========== NAVIGATION ========== -->
   <nav class="navbar" id="navbar">
     <div class="container nav-container">
-      <a href="#hero" class="logo">Beauty<span>Studio</span></a>
+      <a href="#hero" class="logo" aria-label="Strona główna">
+        <img src="img10.png" alt="Logo" loading="eager" />
+      </a>
       <button class="nav-toggle" id="navToggle" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="navLinks">
         <li><a href="#about">O mnie</a></li>
-        <li><a href="#services">Zabiegi</a></li>
+        <li><a href="#zabiegi">Zabiegi</a></li>
         <li><a href="#pricing">Cennik</a></li>
         <li><a href="#gallery">Galeria</a></li>
         <li><a href="#reviews">Opinie</a></li>
@@ -35,9 +42,9 @@
   <header class="hero" id="hero">
     <div class="hero-overlay"></div>
     <div class="container hero-content">
-      <p class="hero-tag">Profesjonalna kosmetologia</p>
+      <!--<p class="hero-tag">Profesjonalna kosmetologia</p>-->
       <h1>Twoja skóra<br />zasługuje na&nbsp;najlepsze</h1>
-      <p class="hero-sub">Kompleksowa pielęgnacja twarzy i ciała w&nbsp;kameralnym, nowoczesnym gabinecie.</p>
+      <!--<p class="hero-sub">Kompleksowa pielęgnacja twarzy i ciała w&nbsp;kameralnym, nowoczesnym gabinecie.</p>-->
       <div class="hero-buttons">
         <a href="#pricing" class="btn btn-primary">Zobacz cennik</a>
         <a href="#contact" class="btn btn-outline">Umów wizytę</a>
@@ -49,61 +56,132 @@
   <section class="section about" id="about">
     <div class="container about-grid">
       <div class="about-image reveal">
-        <img src="img1.jpeg" alt="Kosmetolog w gabinecie" loading="lazy" />
+        <img src="img2.jpeg" alt="Kosmetolog w gabinecie" loading="lazy" />
       </div>
       <div class="about-text reveal">
         <p class="section-tag">O mnie</p>
-        <h2>Pasja do piękna<br />i&nbsp;zdrowej skóry</h2>
+        <h2>Karolina Kępa<br />magister kosmetologii</h2>
         <p>
-          Jestem dyplomowaną kosmetolożką z&nbsp;wieloletnim doświadczeniem w&nbsp;pielęgnacji skóry. 
-          Mój gabinet to miejsce, w&nbsp;którym nowoczesne technologie łączą się z&nbsp;indywidualnym podejściem do każdej klientki.
+          Nazywam się Karolina Kępa i jestem magistrem kosmetologii, absolwentką Uniwersytetu Medycznego w Białymstoku.
+          Moja droga zawodowa to połączenie medycznej wiedzy z pasją do pielęgnacji.
+          Wierzę, że zdrowa skóra to nie tylko kwestia estetyki, ale przede wszystkim Twojego dobrego samopoczucia.
         </p>
         <p>
-          Stawiam na bezpieczne, sprawdzone zabiegi i&nbsp;profesjonalne kosmetyki, aby Twoja skóra wyglądała promiennie i&nbsp;zdrowo.
+          W pracy stawiam na indywidualne podejście i bezpieczne, sprawdzone rozwiązania, by wydobyć Twoje naturalne
+          piękno.
+          Wierzę, że każda skóra ma inne potrzeby, dlatego moją misją jest tworzenie terapii „szytych na miarę”.
+          Nie pracuję schematami — jestem ogromną zwolenniczką technik łączonych podczas zabiegu.
         </p>
-        <a href="#services" class="btn btn-primary">Poznaj zabiegi</a>
+        <p>
+          Na co dzień pomagam moim klientkom i klientom w walce z niedoskonałościami oraz trądzikiem, a także dbam o to,
+          by czas płynął dla ich skóry nieco wolniej.
+          Specjalizuję się w zabiegach regeneracyjnych, stymulujących oraz opóźniających procesy starzenia, stawiając na
+          naturalne,
+          ale wyraźne efekty.
+          Fundamentem jest dla mnie zawsze zdrowa skóra oraz bezpieczeństwo pracy.
+        </p>
+        <a href="#zabiegi" class="btn btn-primary">Poznaj zabiegi</a>
       </div>
     </div>
   </section>
 
-  <!-- ========== SERVICES ========== -->
-  <section class="section services" id="services">
+  <!-- ========== ZABIEGI (TREATMENTS) ========== -->
+  <section class="section zabiegi" id="zabiegi">
     <div class="container">
       <p class="section-tag center">Zabiegi</p>
-      <h2 class="section-title">Co mogę dla Ciebie zrobić</h2>
-      <div class="services-grid">
+      <h2 class="section-title">Specjalistyczne terapie skóry</h2>
+      <div class="zabiegi-grid">
 
-        <div class="service-card reveal">
-          <div class="service-icon">
-            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2"><circle cx="32" cy="24" r="12"/><path d="M16 56c0-8.8 7.2-16 16-16s16 7.2 16 16"/><path d="M32 12V4M24 14l-4-6M40 14l4-6"/></svg>
+        <!-- CARD 1: Terapia przeciwtrądzikowa -->
+        <article class="zabieg-card reveal" data-popup="popup-acne">
+          <div class="zabieg-icon">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="32" cy="32" r="22" />
+              <path d="M24 26c0-4 4-8 8-8s8 4 8 8c0 6-8 14-8 14S24 32 24 26z" />
+              <circle cx="32" cy="24" r="3" fill="currentColor" stroke="none" opacity=".4" />
+            </svg>
           </div>
-          <h3>Pielęgnacja twarzy</h3>
-          <p>Oczyszczanie, nawilżanie, anti-aging — zabiegi dobrane do potrzeb Twojej skóry.</p>
-        </div>
+          <div class="zabieg-body">
+            <h3>Terapia przeciwtrądzikowa</h3>
+            <p>Trądzik to stan zapalny skóry wymagający fachowego, indywidualnego podejścia. Przywróćmy Twojej cerze
+              równowagę.</p>
+          </div>
+          <button class="zabieg-btn" aria-label="Dowiedz się więcej o terapii przeciwtrądzikowej">Dowiedz się więcej
+            <span>→</span></button>
+        </article>
 
-        <div class="service-card reveal">
-          <div class="service-icon">
-            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="32" cy="32" rx="20" ry="28"/><path d="M32 4v56M12 32h40"/><path d="M16 16c8 4 16 4 24 0M16 48c8-4 16-4 24 0"/></svg>
+        <!-- CARD 2: Mezoterapia mikroigłowa -->
+        <article class="zabieg-card reveal" data-popup="popup-micro">
+          <div class="zabieg-icon">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 52L30 16l6 12 6-8 10 32" />
+              <circle cx="30" cy="16" r="3" fill="currentColor" stroke="none" opacity=".4" />
+              <line x1="8" y1="52" x2="56" y2="52" />
+            </svg>
           </div>
-          <h3>Pielęgnacja ciała</h3>
-          <p>Masaże, peelingi i&nbsp;zabiegi wyszczuplające dla pięknej i&nbsp;jędrnej sylwetki.</p>
-        </div>
+          <div class="zabieg-body">
+            <h3>Mezoterapia mikroigłowa</h3>
+            <p>„Siłownia" dla Twojej cery — tysiące mikroskopijnych nakłuć aktywują naturalne procesy regeneracji i
+              zagęszczenia skóry.</p>
+          </div>
+          <button class="zabieg-btn" aria-label="Dowiedz się więcej o mezoterapii mikroigłowej">Dowiedz się więcej
+            <span>→</span></button>
+        </article>
 
-        <div class="service-card reveal">
-          <div class="service-icon">
-            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 28c-2-8 4-16 12-16s14 8 12 16"/><path d="M16 28h32c0 12-8 24-16 24S16 40 16 28z"/><path d="M28 28v12M36 28v12"/></svg>
+        <!-- CARD 3: Mezoterapia igłowa -->
+        <article class="zabieg-card reveal" data-popup="popup-meso">
+          <div class="zabieg-icon">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M32 8v36M20 20l12-12 12 12" />
+              <rect x="24" y="44" width="16" height="10" rx="3" />
+              <path d="M28 44v-6M36 44v-6" />
+            </svg>
           </div>
-          <h3>Brwi i rzęsy</h3>
-          <p>Laminacja, henna, lifting i&nbsp;przedłużanie — podkreśl swoje piękno.</p>
-        </div>
+          <div class="zabieg-body">
+            <h3>Mezoterapia igłowa</h3>
+            <p>Śródskórne podawanie koktajli aktywnych substancji — kwas hialuronowy, witaminy i peptydy tam, gdzie krem
+              nigdy nie dotrze.</p>
+          </div>
+          <button class="zabieg-btn" aria-label="Dowiedz się więcej o mezoterapii igłowej">Dowiedz się więcej
+            <span>→</span></button>
+        </article>
 
-        <div class="service-card reveal">
-          <div class="service-icon">
-            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2"><rect x="12" y="8" width="40" height="48" rx="4"/><path d="M20 20h24M20 28h24M20 36h16"/><circle cx="44" cy="44" r="8"/><path d="M44 40v8M40 44h8"/></svg>
+        <!-- CARD 4: Radiofrekwencja mikroigłowa -->
+        <article class="zabieg-card reveal" data-popup="popup-rf">
+          <div class="zabieg-icon">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M8 40c0-13.3 10.7-24 24-24s24 10.7 24 24" />
+              <path d="M18 40c0-7.7 6.3-14 14-14s14 6.3 14 14" />
+              <circle cx="32" cy="40" r="4" fill="currentColor" stroke="none" opacity=".5" />
+              <line x1="32" y1="36" x2="32" y2="24" />
+            </svg>
           </div>
-          <h3>Konsultacja kosmetologiczna</h3>
-          <p>Bezpłatna analiza skóry i&nbsp;indywidualny plan pielęgnacji domowej.</p>
-        </div>
+          <div class="zabieg-body">
+            <h3>Radiofrekwencja mikroigłowa</h3>
+            <p>Zaawansowany lifting i ujędrnianie cieplną energią RF — efektywny dla twarzy i ciała, bezpieczny dla
+              każdego fototypu skóry.</p>
+          </div>
+          <button class="zabieg-btn" aria-label="Dowiedz się więcej o radiofrekwencji mikroigłowej">Dowiedz się więcej
+            <span>→</span></button>
+        </article>
+
+        <!-- CARD 5: Stymulatory tkankowe -->
+        <article class="zabieg-card reveal" data-popup="popup-stim">
+          <div class="zabieg-icon">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M32 12c-10 0-18 8-18 20 0 8 4 15 10 19h16c6-4 10-11 10-19 0-12-8-20-18-20z" />
+              <path d="M24 36c0-4 3-8 8-8s8 4 8 8" />
+              <line x1="32" y1="28" x2="32" y2="12" />
+            </svg>
+          </div>
+          <div class="zabieg-body">
+            <h3>Stymulatory tkankowe</h3>
+            <p>Przełom w profilaktyce starzenia — preparaty, które aktywują naturalne zdolności regeneracyjne skóry bez
+              efektu przerysowania.</p>
+          </div>
+          <button class="zabieg-btn" aria-label="Dowiedz się więcej o stymulatorach tkankowych">Dowiedz się więcej
+            <span>→</span></button>
+        </article>
 
       </div>
     </div>
@@ -118,7 +196,6 @@
       <div class="pricing-tabs">
         <button class="tab-btn active" data-tab="face">Twarz</button>
         <button class="tab-btn" data-tab="body">Ciało</button>
-        <button class="tab-btn" data-tab="brows">Brwi&nbsp;&amp;&nbsp;rzęsy</button>
       </div>
 
       <div class="pricing-tables">
@@ -127,45 +204,99 @@
         <div class="price-table active" id="tab-face">
           <div class="price-row reveal">
             <div class="price-info">
-              <h4>Oczyszczanie manualne</h4>
-              <p>Głębokie oczyszczanie z ekstrakcją zaskórników</p>
+              <h4>Zabiegi terapeutyczne (trądzik pospolity / trądzik różowaty / przebarwienia / zmarszczki / nawilżenie)
+              </h4>
+              <p>Twarz / Twarz + szyja / Twarz + szyja + dekolt</p>
             </div>
-            <span class="price">150 zł</span>
+            <span class="price">250 / 290 / 330 zł</span>
           </div>
+
           <div class="price-row reveal">
             <div class="price-info">
-              <h4>Peeling chemiczny</h4>
-              <p>Kwasy dostosowane do typu skóry</p>
+              <h4>Peeling z alg morskich</h4>
+              <p>Twarz / Twarz + szyja / Twarz + szyja + dekolt</p>
             </div>
-            <span class="price">200 zł</span>
+            <span class="price">220 / 250 / 300 zł</span>
           </div>
+
+          <div class="price-row reveal">
+            <div class="price-info">
+              <h4>Mezoterapia mikroigłowa (urządzenie certyfikowane)</h4>
+              <p>Twarz / Twarz + szyja / Twarz + szyja + dekolt</p>
+            </div>
+            <span class="price">330 / 380 / 420 zł</span>
+          </div>
+
+          <div class="price-row reveal">
+            <div class="price-info">
+              <h4>Mezoterapia mikroigłowa + retinol</h4>
+              <p>Twarz / Twarz + szyja / Twarz + szyja + dekolt</p>
+            </div>
+            <span class="price">400 / 440 / 490 zł</span>
+          </div>
+
+          <div class="price-row reveal">
+            <div class="price-info">
+              <h4>Mezoterapia mikroigłowa + peeling medyczny</h4>
+              <p>Twarz / Twarz + szyja / Twarz + szyja + dekolt</p>
+            </div>
+            <span class="price">380 / 400 / 450 zł</span>
+          </div>
+
+          <div class="price-row reveal">
+            <div class="price-info">
+              <h4>Żółta skórka</h4>
+              <p>Zabieg na twarz</p>
+            </div>
+            <span class="price">250 zł</span>
+          </div>
+
+          <div class="price-row reveal">
+            <div class="price-info">
+              <h4>BioRePeel</h4>
+              <p>Twarz / Twarz + szyja / Twarz + szyja + dekolt</p>
+            </div>
+            <span class="price">200 / 230 / 290 zł</span>
+          </div>
+
           <div class="price-row reveal">
             <div class="price-info">
               <h4>Mezoterapia igłowa</h4>
-              <p>Odżywienie i regeneracja głębokich warstw skóry</p>
+              <p>Twarz / Twarz + szyja / Twarz + szyja + dekolt</p>
             </div>
-            <span class="price">300 zł</span>
+            <span class="price">350 / 450 / 550 zł</span>
           </div>
+
           <div class="price-row reveal">
             <div class="price-info">
-              <h4>Mikrodermabrazja</h4>
-              <p>Złuszczanie i wygładzanie naskórka</p>
+              <h4>Mezoterapia igłowa + peeling</h4>
+              <p>Twarz / Twarz + szyja / Twarz + szyja + dekolt</p>
             </div>
-            <span class="price">180 zł</span>
+            <span class="price">450 / 500 / 650 zł</span>
           </div>
+
           <div class="price-row reveal">
             <div class="price-info">
-              <h4>Lifting RF</h4>
-              <p>Ujędrnianie skóry falami radiowymi</p>
+              <h4>Mezoterapia igłowa okolic oczu</h4>
+              <p>Okolica oczu</p>
             </div>
-            <span class="price">350 zł</span>
+            <span class="price">290 zł</span>
           </div>
+
           <div class="price-row reveal">
             <div class="price-info">
-              <h4>Nawilżanie kwasem hialuronowym</h4>
-              <p>Intensywne nawodnienie i odbudowa bariery skóry</p>
+              <h4>Dr. CYJ — mezoterapia skóry głowy</h4>
+              <p>Skóra głowy</p>
             </div>
-            <span class="price">220 zł</span>
+            <span class="price">390 zł</span>
+          </div>
+
+          <div class="price-row reveal">
+            <div class="price-info">
+              <h4>Peeling kawitacyjny (dodatek do zabiegu)</h4>
+              <p>Możliwość dodania do wybranego zabiegu</p>
+            </div>
+            <span class="price">+ 50 zł</span>
           </div>
         </div>
 
@@ -173,84 +304,50 @@
         <div class="price-table" id="tab-body">
           <div class="price-row reveal">
             <div class="price-info">
-              <h4>Drenaż limfatyczny</h4>
-              <p>Redukcja obrzęków i poprawa krążenia</p>
+              <h4>Radiofrekwencja mikroigłowa — twarz</h4>
+              <p>Zabieg na twarz</p>
             </div>
-            <span class="price">200 zł</span>
+            <span class="price">400 zł</span>
           </div>
+
           <div class="price-row reveal">
             <div class="price-info">
-              <h4>Masaż relaksacyjny</h4>
-              <p>60 minut głębokiego odprężenia</p>
+              <h4>Radiofrekwencja mikroigłowa — twarz + szyja</h4>
+              <p>Zabieg na twarz / szyję</p>
+            </div>
+            <span class="price">450 zł</span>
+          </div>
+
+          <div class="price-row reveal">
+            <div class="price-info">
+              <h4>Radiofrekwencja mikroigłowa — twarz + szyja + dekolt</h4>
+              <p>Zabieg na twarz / szyję / dekolt</p>
+            </div>
+            <span class="price">480 zł</span>
+          </div>
+
+          <div class="price-row reveal">
+            <div class="price-info">
+              <h4>Radiofrekwencja mikroigłowa — brzuch (wiotkość)</h4>
+              <p>Ujędrnianie okolicy brzucha</p>
+            </div>
+            <span class="price">400 zł</span>
+          </div>
+
+          <div class="price-row reveal">
+            <div class="price-info">
+              <h4>Radiofrekwencja mikroigłowa — blizna</h4>
+              <p>Opracowanie pojedynczej blizny</p>
             </div>
             <span class="price">150 zł</span>
           </div>
-          <div class="price-row reveal">
-            <div class="price-info">
-              <h4>Peeling ciała</h4>
-              <p>Złuszczenie i nawilżenie skóry całego ciała</p>
-            </div>
-            <span class="price">120 zł</span>
-          </div>
-          <div class="price-row reveal">
-            <div class="price-info">
-              <h4>Zabieg wyszczuplający</h4>
-              <p>Modelowanie sylwetki i redukcja cellulitu</p>
-            </div>
-            <span class="price">250 zł</span>
-          </div>
-          <div class="price-row reveal">
-            <div class="price-info">
-              <h4>Karboksyterapia</h4>
-              <p>Stymulacja produkcji kolagenu CO₂</p>
-            </div>
-            <span class="price">280 zł</span>
-          </div>
-        </div>
 
-        <!-- BRWI & RZĘSY -->
-        <div class="price-table" id="tab-brows">
           <div class="price-row reveal">
             <div class="price-info">
-              <h4>Laminacja brwi</h4>
-              <p>Stylizacja i utrwalenie naturalnego kształtu</p>
+              <h4>Radiofrekwencja mikroigłowa — wewnętrzna część ud (wiotkość)</h4>
+              <p>Ujędrnianie wewnętrznej strony ud</p>
             </div>
-            <span class="price">100 zł</span>
-          </div>
-          <div class="price-row reveal">
-            <div class="price-info">
-              <h4>Henna brwi</h4>
-              <p>Koloryzacja i podkreślenie łuku brwiowego</p>
-            </div>
-            <span class="price">50 zł</span>
-          </div>
-          <div class="price-row reveal">
-            <div class="price-info">
-              <h4>Regulacja brwi</h4>
-              <p>Precyzyjne kształtowanie pęsetą</p>
-            </div>
-            <span class="price">30 zł</span>
-          </div>
-          <div class="price-row reveal">
-            <div class="price-info">
-              <h4>Lifting rzęs</h4>
-              <p>Naturalne podkręcenie z efektem open-eyes</p>
-            </div>
-            <span class="price">120 zł</span>
-          </div>
-          <div class="price-row reveal">
-            <div class="price-info">
-              <h4>Przedłużanie rzęs 1:1</h4>
-              <p>Klasyczna metoda — naturalny efekt</p>
-            </div>
-            <span class="price">200 zł</span>
-          </div>
-          <div class="price-row reveal">
-            <div class="price-info">
-              <h4>Przedłużanie rzęs objętościowe</h4>
-              <p>Metoda 2D-5D — efekt wow</p>
-            </div>
-            <span class="price">280 zł</span>
+            <span class="price">500 zł</span>
           </div>
         </div>
 
@@ -264,12 +361,12 @@
       <p class="section-tag center">Galeria</p>
       <h2 class="section-title">Efekty moich zabiegów</h2>
       <div class="gallery-grid">
-        <div class="gallery-item reveal"><img src="img1.jpeg" alt="Zabieg kosmetyczny 1" loading="lazy" /></div>
-        <div class="gallery-item reveal"><img src="img2.jpeg" alt="Zabieg kosmetyczny 2" loading="lazy" /></div>
-        <div class="gallery-item reveal"><img src="img3.jpeg" alt="Zabieg kosmetyczny 3" loading="lazy" /></div>
-        <div class="gallery-item reveal"><img src="img1.jpeg" alt="Zabieg kosmetyczny 4" loading="lazy" /></div>
-        <div class="gallery-item reveal"><img src="img2.jpeg" alt="Zabieg kosmetyczny 5" loading="lazy" /></div>
-        <div class="gallery-item reveal"><img src="img3.jpeg" alt="Zabieg kosmetyczny 6" loading="lazy" /></div>
+        <div class="gallery-item reveal"><img src="img4.jpeg" alt="Zabieg kosmetyczny 1" loading="lazy" /></div>
+        <div class="gallery-item reveal"><img src="img5.jpeg" alt="Zabieg kosmetyczny 2" loading="lazy" /></div>
+        <div class="gallery-item reveal"><img src="img6.jpeg" alt="Zabieg kosmetyczny 3" loading="lazy" /></div>
+        <div class="gallery-item reveal"><img src="img7.jpeg" alt="Zabieg kosmetyczny 4" loading="lazy" /></div>
+        <div class="gallery-item reveal"><img src="img8.jpeg" alt="Zabieg kosmetyczny 5" loading="lazy" /></div>
+        <div class="gallery-item reveal"><img src="img9.jpeg" alt="Zabieg kosmetyczny 6" loading="lazy" /></div>
       </div>
     </div>
 
@@ -291,19 +388,25 @@
 
         <div class="review-card reveal">
           <div class="review-stars">★★★★★</div>
-          <p>"Fantastyczny gabinet! Skóra po zabiegu wygląda niesamowicie. Polecam każdej kobiecie."</p>
+          <p>"Gorąco polecam Panią Karolinę, wspaniały kosmetolog. Zabiegi przerosły moje oczekiwania. Dobrane idealnie
+            do mojej cery."</p>
           <span class="review-author">— Anna K.</span>
         </div>
 
         <div class="review-card reveal">
           <div class="review-stars">★★★★★</div>
-          <p>"Profesjonalne podejście i cudowna atmosfera. Wychodzę zawsze odprężona i zadowolona."</p>
+          <p>"Polecam Panią Karolinę przede wszystkim za naprawdę indywidualne podejście do klienta. Po każdym zabiegu
+            byłam bardzo zadowolona. Pani Kosmetolog nie tylko wykonywała zabiegi, ale też cierpliwie tłumaczyła, jak
+            dbać o skórę w domu. Kompetencje na najwyższym poziomie!"</p>
           <span class="review-author">— Marta W.</span>
         </div>
 
         <div class="review-card reveal">
           <div class="review-stars">★★★★★</div>
-          <p>"Najlepsze przedłużanie rzęs w mieście! Efekt naturalny i trwały. Już nie wyobrażam sobie innego gabinetu."</p>
+          <p>"Pani Karolina to profesjonalistka o ogromnej wiedzy i doświadczeniu, ale także osoba, która podchodzi do
+            każdego klienta z niezwykłą uważnością i zaangażowaniem. Każda wizyta przebiega w komfortowej, spokojnej
+            atmosferze, a zabiegi są dobierane indywidualnie, z uwzględnieniem realnych potrzeb skóry. Widać ogromną
+            pasję do pracy oraz dbałość o najwyższą jakość usług i produktów."</p>
           <span class="review-author">— Karolina P.</span>
         </div>
 
@@ -318,71 +421,51 @@
       <div class="contact-info reveal">
         <p class="section-tag">Kontakt</p>
         <h2>Umów się na wizytę</h2>
-        <p>Zadzwoń, napisz lub wypełnij formularz — odezwę się najszybciej jak to możliwe.</p>
+        <p>Zadzwoń lub napisz — odezwę się najszybciej jak to możliwe.</p>
 
         <div class="contact-details">
           <div class="contact-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+            </svg>
             <div>
               <strong>Telefon</strong>
               <a href="tel:+48123456789">+48 123 456 789</a>
             </div>
           </div>
           <div class="contact-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4l-10 8L2 4"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="M22 4l-10 8L2 4" />
+            </svg>
             <div>
               <strong>E-mail</strong>
               <a href="mailto:kontakt@beautystudio.pl">kontakt@beautystudio.pl</a>
             </div>
           </div>
           <div class="contact-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1118 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
             <div>
               <strong>Adres</strong>
               <p>ul. Piękna 12, 00-001 Warszawa</p>
             </div>
           </div>
           <div class="contact-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 6v6l4 2" />
+            </svg>
             <div>
               <strong>Godziny otwarcia</strong>
-              <p>Pon – Pt: 9:00 – 19:00<br/>Sob: 9:00 – 15:00</p>
+              <p>Pon – Pt: 9:00 – 19:00<br />Sob: 9:00 – 15:00</p>
             </div>
           </div>
         </div>
       </div>
-
-      <form class="contact-form reveal" id="contactForm">
-        <div class="form-group">
-          <input type="text" id="formName" placeholder="Imię i nazwisko" required />
-        </div>
-        <div class="form-group">
-          <input type="tel" id="formPhone" placeholder="Numer telefonu" required />
-        </div>
-        <div class="form-group">
-          <input type="email" id="formEmail" placeholder="Adres e-mail" />
-        </div>
-        <div class="form-group">
-          <select id="formService">
-            <option value="" disabled selected>Wybierz zabieg</option>
-            <option>Oczyszczanie manualne</option>
-            <option>Peeling chemiczny</option>
-            <option>Mezoterapia igłowa</option>
-            <option>Mikrodermabrazja</option>
-            <option>Lifting RF</option>
-            <option>Masaż relaksacyjny</option>
-            <option>Peeling ciała</option>
-            <option>Laminacja brwi</option>
-            <option>Lifting rzęs</option>
-            <option>Przedłużanie rzęs</option>
-            <option>Inne</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <textarea id="formMessage" placeholder="Wiadomość (opcjonalnie)" rows="4"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary btn-full">Wyślij wiadomość</button>
-      </form>
 
     </div>
   </section>
@@ -390,26 +473,215 @@
   <!-- ========== FOOTER ========== -->
   <footer class="footer">
     <div class="container footer-inner">
-      <a href="#hero" class="logo">Beauty<span>Studio</span></a>
+      <a href="#hero" class="logo" aria-label="Strona główna">
+        <img src="img11.png" alt="Logo" loading="lazy" />
+      </a>
       <div class="footer-links">
         <a href="#about">O mnie</a>
-        <a href="#services">Zabiegi</a>
+        <a href="#zabiegi">Zabiegi</a>
         <a href="#pricing">Cennik</a>
         <a href="#gallery">Galeria</a>
         <a href="#contact">Kontakt</a>
       </div>
       <div class="footer-socials">
         <a href="#" aria-label="Instagram">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="2" width="20" height="20" rx="5" />
+            <circle cx="12" cy="12" r="5" />
+            <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none" />
+          </svg>
         </a>
         <a href="#" aria-label="Facebook">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+          </svg>
         </a>
       </div>
-      <p class="footer-copy">&copy; 2026 BeautyStudio. Wszelkie prawa zastrzeżone.</p>
+      <p class="footer-copy">&copy; K/K STUDIO KOSMATOLOGI Karolina Kępa. Wszelkie prawa zastrzeżone.</p>
     </div>
   </footer>
 
+  <!-- ========== TREATMENT POPUPS ========== -->
+  <div class="popup-overlay" id="popupOverlay" role="dialog" aria-modal="true" aria-label="Szczegóły zabiegu">
+    <div class="popup-box">
+      <div class="popup-content" id="popupContent"></div>
+    </div>
+  </div>
+
+  <!-- POPUP DATA (hidden templates) -->
+
+  <template id="popup-acne">
+    <div class="popup-header acne">
+      <button class="popup-close" id="popupClose" aria-label="Zamknij">&times;</button>
+      <span class="popup-tag">Zabiegi</span>
+      <h2>Terapia przeciwtrądzikowa</h2>
+      <p class="popup-lead">Trądzik to nie tylko problem estetyczny — to stan zapalny skóry, który wymaga fachowego
+        podejścia i cierpliwości.</p>
+    </div>
+    <div class="popup-body">
+      <p>Każda cera jest inna, dlatego terapię zawsze dobieram indywidualnie. Oferuję sprawdzony plan działania, który
+        przywróci Twojej skórze równowagę.</p>
+      <div class="popup-before-after">
+        <div class="before-after-placeholder">
+          <div class="ba-half before"><span>Przed</span></div>
+          <div class="ba-half after"><span>Po</span></div>
+          <div class="ba-divider"></div>
+        </div>
+        <p class="ba-caption">Zdjęcia przed i po terapii — efekty widoczne już po 4–6 zabiegach</p>
+      </div>
+      <ul class="popup-list">
+        <li><strong>Indywidualny dobór terapii</strong> — analiza skóry i plan leczenia uszyty na miarę</li>
+        <li><strong>Podejście kompleksowe</strong> — łączymy techniki, aby działać holistycznie</li>
+        <li><strong>Bezpieczeństwo</strong> — wyłącznie certyfikowane preparaty i sprawdzone protokoły</li>
+        <li><strong>Edukacja</strong> — pielęgnacja domowa jako część terapii</li>
+      </ul>
+      <a href="#contact" class="btn btn-primary popup-cta" id="acneCta">Umów wizytę</a>
+    </div>
+  </template>
+
+  <template id="popup-micro">
+    <div class="popup-header micro">
+      <button class="popup-close" aria-label="Zamknij">&times;</button>
+      <span class="popup-tag">Zabiegi</span>
+      <h2>Mezoterapia mikroigłowa</h2>
+      <p class="popup-lead">Jeden z najskuteczniejszych zabiegów rewitalizujących — pobudza skórę do samoregeneracji
+        poprzez mechaniczną stymulację i głęboką infuzję substancji aktywnych.</p>
+    </div>
+    <div class="popup-body">
+      <h3 class="popup-subtitle">Na czym polega zabieg?</h3>
+      <p>Zabieg polega na wykonywaniu tysięcy mikroskopijnych nakłuć za pomocą sterylnych igieł. Proces ten ma dwa cele:
+      </p>
+      <ul class="popup-list">
+        <li><strong>Mechaniczna stymulacja</strong> — kontrolowane mikrourazy natychmiast aktywują procesy naprawcze w
+          skórze</li>
+        <li><strong>Głęboka infuzja</strong> — przez powstałe kanaliki wprowadzamy skoncentrowane koktajle substancji
+          aktywnych (kwas hialuronowy, witaminy, aminokwasy), które docierają tam, gdzie zwykły krem nigdy nie dotrze
+        </li>
+      </ul>
+      <div class="popup-highlight">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+        </svg>
+        <p>Zabieg wykonywany jest za pomocą medycznego, certyfikowanego urządzenia w warunkach pełnego bezpieczeństwa.
+        </p>
+      </div>
+      <a href="#contact" class="btn btn-primary popup-cta" id="microCta">Umów wizytę</a>
+    </div>
+  </template>
+
+  <template id="popup-meso">
+    <div class="popup-header meso">
+      <button class="popup-close" aria-label="Zamknij">&times;</button>
+      <span class="popup-tag">Zabiegi</span>
+      <h2>Mezoterapia igłowa</h2>
+      <p class="popup-lead">Śródskórne podawanie małych dawek preparatów leczniczych i regenerujących za pomocą bardzo
+        cienkiej igły — omijamy barierę naskórka dla maksymalnej skuteczności.</p>
+    </div>
+    <div class="popup-body">
+      <h3 class="popup-subtitle">Co wprowadzamy w głąb skóry?</h3>
+      <ul class="popup-list">
+        <li><strong>Kwas hialuronowy</strong> — głęboko nawilża i „wypycha" drobne zmarszczki od środka</li>
+        <li><strong>Witaminy (A, C, E, z grupy B)</strong> — rozświetlają cerę i działają silnie antyoksydacyjnie</li>
+        <li><strong>Aminokwasy i peptydy</strong> — pobudzają produkcję kolagenu i naprawiają strukturę skóry</li>
+        <li><strong>Kofeina lub krzemionka</strong> — pomagają w walce z cieniami pod oczami i obrzękami</li>
+      </ul>
+      <h3 class="popup-subtitle">Jakie problemy rozwiązuje?</h3>
+      <ul class="popup-list">
+        <li>Odwodnienie i szary koloryt — skóra odzyskuje blask i wygląda na wypoczętą</li>
+        <li>Utrata elastyczności — skóra staje się bardziej gęsta i jędrna</li>
+        <li>Cienie pod oczami — specjalne koktajle rewitalizują delikatną okolicę oka</li>
+        <li>Wypadanie włosów — mezoterapia skóry głowy to złoty standard w hamowaniu łysienia</li>
+        <li>Profilaktyka przeciwstarzeniowa — regularne zabiegi opóźniają powstawanie zmarszczek</li>
+      </ul>
+      <div class="popup-highlight">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+        </svg>
+        <p>Pracuję wyłącznie na certyfikowanych preparatach. Każda ampułka otwierana jest bezpośrednio przy
+          kliencie/klientce.</p>
+      </div>
+      <a href="#contact" class="btn btn-primary popup-cta" id="mesoCta">Umów wizytę</a>
+    </div>
+  </template>
+
+  <template id="popup-rf">
+    <div class="popup-header rf">
+      <button class="popup-close" aria-label="Zamknij">&times;</button>
+      <span class="popup-tag">Zabiegi</span>
+      <h2>Radiofrekwencja mikroigłowa</h2>
+      <p class="popup-lead">Jedna z najbardziej zaawansowanych metod współczesnej kosmetologii estetycznej — precyzyjny
+        lifting i przebudowa struktury skóry.</p>
+    </div>
+    <div class="popup-body">
+      <p>Zabieg polega na jednoczesnym wprowadzaniu mikroigieł w głąb skóry i emitowaniu impulsu fali radiowej. Energia
+        cieplna dociera precyzyjnie do skóry właściwej, powodując natychmiastowe obkurczenie włókien kolagenowych i
+        stymulując produkcję nowej elastyny i kolagenu.</p>
+      <div class="popup-two-col">
+        <div>
+          <h3 class="popup-subtitle">Zastosowanie na twarz</h3>
+          <ul class="popup-list">
+            <li>Lifting i poprawa owalu — redukcja „chomików"</li>
+            <li>Redukcja blizn potrądzikowych</li>
+            <li>Odmłodzenie spojrzenia — uniesienie powiek</li>
+            <li>Zwężenie porów i matowienie</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="popup-subtitle">Zastosowanie na ciało</h3>
+          <ul class="popup-list">
+            <li>Brzuch — ujędrnianie po ciąży lub odchudzaniu</li>
+            <li>Ramiona i kolana — likwidacja nawisów</li>
+            <li>Rozstępy — skuteczna redukcja</li>
+            <li>Uda i pośladki — walka z cellulitem</li>
+          </ul>
+        </div>
+      </div>
+      <h3 class="popup-subtitle">Dlaczego warto?</h3>
+      <ul class="popup-list">
+        <li><strong>Głębokie działanie</strong> — dociera znacznie głębiej niż klasyczne zabiegi laserowe</li>
+        <li><strong>Krótki czas rekonwalescencji</strong> — zaczerwienienie znika w ciągu 24–48 h</li>
+        <li><strong>Bezpieczeństwo</strong> — bezpieczny dla każdego fototypu skóry</li>
+        <li><strong>Trwałość</strong> — efekty pogłębiają się z każdym tygodniem po zabiegu</li>
+      </ul>
+      <a href="#contact" class="btn btn-primary popup-cta" id="rfCta">Umów wizytę</a>
+    </div>
+  </template>
+
+  <template id="popup-stim">
+    <div class="popup-header stim">
+      <button class="popup-close" aria-label="Zamknij">&times;</button>
+      <span class="popup-tag">Zabiegi</span>
+      <h2>Stymulatory tkankowe</h2>
+      <p class="popup-lead">Przełom w profilaktyce starzenia — preparaty, które nie „wypełniają" skóry sztucznie, ale
+        aktywują jej naturalne zdolności regeneracyjne.</p>
+    </div>
+    <div class="popup-body">
+      <h3 class="popup-subtitle">Jak działają stymulatory?</h3>
+      <p>Wstrzykiwane preparaty działają bezpośrednio na fibroblasty — komórki odpowiedzialne za produkcję kolagenu i
+        elastyny. Zamiast tylko nawilżać (jak mezoterapia) czy maskować zmarszczki (jak wypełniacze), stymulatory
+        odbudowują fundamenty Twojej skóry. Efekt narasta w czasie, dając naturalny rezultat odmłodzenia.</p>
+      <h3 class="popup-subtitle">Największe zalety</h3>
+      <ul class="popup-list">
+        <li><strong>Efekt bez zmiany rysów</strong> — twarz wygląda na bardziej wypoczętą, zachowując naturalną mimikę
+        </li>
+        <li><strong>Głęboka przebudowa</strong> — skóra staje się grubsza, bardziej elastyczna i odporna na grawitację
+        </li>
+        <li><strong>Długofalowe rezultaty</strong> — produkcja nowego kolagenu trwa jeszcze wiele tygodni po zabiegu
+        </li>
+        <li><strong>Wszechstronność</strong> — idealne do twarzy, szyi, dekoltu, a nawet dłoni</li>
+      </ul>
+      <h3 class="popup-subtitle">Dla kogo?</h3>
+      <ul class="popup-list">
+        <li>Utrata owalu twarzy — tzw. „chomiki"</li>
+        <li>Wiotkość i „papierowa" struktura skóry</li>
+        <li>Drobne zmarszczki bez efektu botoksu czy kwasu</li>
+        <li>Zmęczona, poszarzała cera wymagająca intensywnej odnowy</li>
+      </ul>
+      <a href="#contact" class="btn btn-primary popup-cta" id="stimCta">Umów wizytę</a>
+    </div>
+  </template>
+
   <script src="index.js"></script>
 </body>
+
 </html>
